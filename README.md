@@ -6,19 +6,25 @@ This project uses an NGROK secure tunnel to recieve the Twitch Post requests.
 
 The project needs the following environmental constants setup before running:
 
-PORT
+- PORT
 > Defined port the server will be listening on, if using NGROK tunnel this should match the same port set for the tunnel
-TWITCH_SIGNING_SECRET
+
+- TWITCH_SIGNING_SECRET
 > Unique string that is used to verify any incoming post requests
-TWITCH_CLIENT_ID
+
+- TWITCH_CLIENT_ID
 > ID from [Twitch Developer](https://dev.twitch.tv/console) application that you create.
-TWITCH_CLIENT_SECRET
+
+- TWITCH_CLIENT_SECRET
 > Secret from [Twitch Developer](https://dev.twitch.tv/console) application that you create.
-DISCORD_WEBSOCKET_URL
+
+- DISCORD_WEBSOCKET_URL
 > Discord websocket URL used to post the notification to
-TWITCH_BROADCASTER_ID
+
+- TWITCH_BROADCASTER_ID
 > Unique ID of broadcaster, this can be found using [Twitch CLI](https://dev.twitch.tv/docs/cli/) tool
-NGROK_URL
+
+- NGROK_URL
 > Unique Ngrok tunnel URL that should point to PORT on the local host
 
 In works:
